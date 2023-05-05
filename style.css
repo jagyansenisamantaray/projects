@@ -3,79 +3,54 @@
     padding: 0;
 }
 body{
-    overflow: hidden;
+    border: 10px solid navy;
+    height: 97vh;
+    /* overflow: hidden; */
+    background-color: rgb(212 225 222);
 }
-.sky{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
+.container1{
+    display: flex;
+    
+    justify-content: space-between;
 }
-.tree{
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-image: url(trees.png);
-    position: absolute;
-    bottom: 80px;
-   
-}
-.track{
-    height: 60vh;
-    width: 800vw;
-    /* background-size: cover; */
-    background-image: url(track.png);
-    position: absolute;
-    top: 500px; 
-    background-repeat:repeat-x;
-    animation:trackrotation linear 7s infinite;
-}
-.car{
-    height: 100px;
-    width: 390px;
-    background-image: url(car_body.png);
-    background-size: cover;
-    position: relative;
-    top: 67vh;
-    left: 200px;
-    background-repeat: no-repeat;
-    animation:shake linear .7s infinite;
-}
+.container1 h1{
+    margin-top: 150px;
+    margin-left: 10vh;
+    font-size: 50px;
 
-.wheel1 img{
-    width: 77px;
-    position: relative;
-    top: 36px;
-    left: 47px;
-    animation:wheelrotation linear .5s infinite;
     
 }
-.wheel2 img{
-    width: 77px;
-    position: relative;
-    top: -43px;
-    left: 34vh;
-    animation:wheelrotation linear .5s infinite;
+.container1 img{
+    margin-left: 10vh;
+    margin-top: 10vh;
+    border-radius: 50%;
+    height: 30vh;
+    width: 400px;
 }
-@keyframes wheelrotation{
-    100%{
-        transform: rotate(360deg);
-    }
+.container1 p{
+    margin-top: 30vh;
+    margin-right: 400px;
+    font-size: 20px;
 }
-@keyframes trackrotation{
-    100%{
-        transform: translateX(-500vw);
-    }
-} 
-@keyframes shake{
-       0%{
-        transform: translateY(-5px);
-       }
-       50%{
-        transform: translateY(5px);
-       }
-       100%{
-        transform: translatey(-5px);
-       }
+.container2 h1{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.container2 p{
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: justify;
+}
+.container3 h2{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.container3 .list{
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: justify;
+}
+.container3 p{
+    margin-top: 20px;
+    margin-left: 1100px;
 }
